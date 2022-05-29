@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Checking Web-page</title>
+    <style>
+        body{
+            background-color: rgb(141, 250, 214);
+        }
+    </style>
+</head>
+<body>
+
+    <form onsubmit="checkGrade(); return false">
+
+    What was Total Marks:
+    <input required type="number" min="1" id="Input1">
+
+    <br>
+
+    What was your Score:
+    <input required type="number" min="0" id="Input2">
+
+    <br>
+
+    <button type="submit">Check</button>
+    </form>
+    
+
+    <h1 id="result"></h1>
+    <P id="validationText" style="color: rgb(182, 0, 0);"></P>
+    <p>
+        Grade Distributions
+    </p>
+
+    <p>
+        <ul>
+            <li>passing marks is 40%</li>
+            <li>40% - 49% Grade D</li>
+            <li>50% - 59% Grade C</li>
+            <li>60% - 69% Grade B</li>
+            <li>70% - 79% Grade A</li>
+            <li>80% - 89% Grade A1</li>
+            <li>90% - 100% Grade A1+</li>
+        </ul>   
+    </p>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
